@@ -6,7 +6,7 @@ import random
 otp = str(random.randint(200000,999999))
 
 smtp_server = "smtp.gmail.com"
-port = 587  # For starttls
+port = 587  
 sender_email = "venkateshpensalwar561@gmail.com"
 password = "dqulnfwhvbdlghmx"
 receiver_email = ""
@@ -29,6 +29,8 @@ def verify_otp():
         result_label.config(text="OTP Not verified")
 
 root = tk.Tk()
+root.title("OTP Verfication Using Python")
+root.iconbitmap(r'password__1__IAq_icon.ico')
 root.geometry("300x200")
 
 email_label = tk.Label(root, text="Enter your email:")
